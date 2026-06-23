@@ -1,0 +1,158 @@
+{
+  "_catalog": {
+    "fy_courses": [
+      {
+        "crn": "10421",
+        "subj": "ECON",
+        "crse": "101",
+        "title": "Principles of Microeconomics",
+        "desc": "Introduces economic decision making, markets, supply and demand, consumer behavior, firms, and basic welfare analysis.\nPrerequisite Information: None..",
+        "geneds": [
+          "IFQD"
+        ]
+      },
+      {
+        "crn": "10422",
+        "subj": "ECON",
+        "crse": "102",
+        "title": "Principles of Macroeconomics",
+        "desc": "Covers national income, inflation, unemployment, fiscal policy, monetary policy, and international trade.\nPrerequisite Information: None..",
+        "geneds": [
+          "IFQD"
+        ]
+      },
+      {
+        "crn": "11834",
+        "subj": "CMSC",
+        "crse": "150",
+        "title": "Introduction to Computing",
+        "desc": "Introduces computational thinking, programming fundamentals, data structures, and problem solving using code.\nPrerequisite Information: None..",
+        "geneds": [
+          "IFQD"
+        ]
+      },
+      {
+        "crn": "11835",
+        "subj": "MATH",
+        "crse": "211",
+        "title": "Calculus I",
+        "desc": "Studies limits, derivatives, integrals, and applications of single-variable calculus.\nPrerequisite Information: Placement or departmental permission..",
+        "geneds": [
+          "IFQD"
+        ]
+      },
+      {
+        "crn": "12309",
+        "subj": "PSYC",
+        "crse": "100",
+        "title": "Introduction to Psychology",
+        "desc": "Surveys major topics in psychology including cognition, development, behavior, social psychology, and mental health.\nPrerequisite Information: None..",
+        "geneds": [
+          "AISO"
+        ]
+      },
+      {
+        "crn": "13014",
+        "subj": "BIOL",
+        "crse": "190",
+        "title": "Introduction to Biological Thinking",
+        "desc": "Introduces biological systems, evolution, genetics, ecology, and experimental reasoning.\nPrerequisite Information: None..",
+        "geneds": [
+          "AINS"
+        ]
+      },
+      {
+        "crn": "14108",
+        "subj": "ENGL",
+        "crse": "202",
+        "title": "Academic Writing Seminar",
+        "desc": "Develops college-level writing, close reading, argumentation, and research skills.\nPrerequisite Information: None..",
+        "geneds": [
+          "AILT"
+        ]
+      },
+      {
+        "crn": "15277",
+        "subj": "LDST",
+        "crse": "101",
+        "title": "Leadership and the Humanities",
+        "desc": "Explores leadership through historical, philosophical, and cultural texts.\nPrerequisite Information: None..",
+        "geneds": [
+          "AIHS"
+        ]
+      },
+      {
+        "crn": "16602",
+        "subj": "GEOG",
+        "crse": "210",
+        "title": "People, Places, and Environments",
+        "desc": "Examines relationships among people, place, environment, and spatial patterns using geographic methods.\nPrerequisite Information: None..",
+        "geneds": [
+          "AISO",
+          "IFPE"
+        ]
+      },
+      {
+        "crn": "17891",
+        "subj": "HIST",
+        "crse": "199",
+        "title": "Global History in Perspective",
+        "desc": "Introduces historical analysis through global themes, evidence, and interpretation.\nPrerequisite Information: None..",
+        "geneds": [
+          "AIHS"
+        ]
+      },
+      {
+        "crn": "18340",
+        "subj": "PHIL",
+        "crse": "110",
+        "title": "Introduction to Ethics",
+        "desc": "Explores major ethical theories and applies them to contemporary moral questions.\nPrerequisite Information: None..",
+        "geneds": [
+          "AIHS"
+        ]
+      },
+      {
+        "crn": "19563",
+        "subj": "ARTS",
+        "crse": "101",
+        "title": "Foundations of Visual Art",
+        "desc": "Introduces visual composition, creative process, and art-making practices.\nPrerequisite Information: None..",
+        "geneds": [
+          "AIVP"
+        ]
+      },
+      {
+        "crn": "20674",
+        "subj": "DATA",
+        "crse": "101",
+        "title": "Introduction to Data Analytics",
+        "desc": "Introduces data collection, cleaning, visualization, and interpretation for real-world questions.\nPrerequisite Information: None..",
+        "geneds": [
+          "IFQD",
+          "SLP"
+        ]
+      },
+      {
+        "crn": "21785",
+        "subj": "CHEM",
+        "crse": "141",
+        "title": "General Chemistry I",
+        "desc": "Covers atomic structure, bonding, stoichiometry, thermodynamics, and chemical reactions.\nPrerequisite Information: Placement or concurrent enrollment in introductory laboratory..",
+        "geneds": [
+          "AINS"
+        ]
+      },
+      {
+        "crn": "22896",
+        "subj": "RELG",
+        "crse": "130",
+        "title": "Religion and Culture",
+        "desc": "Examines religious traditions, practices, texts, and their influence on culture and society.\nPrerequisite Information: None..",
+        "geneds": [
+          "AIHS"
+        ]
+      }
+    ]
+  }
+}

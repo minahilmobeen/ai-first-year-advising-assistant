@@ -1,0 +1,18 @@
+TERMCODE,CRN,SUBJ,CRSE,TITLE,ATTR,COURSE_DESC,COURSE_PREREQS
+202610,10421,ECON,101,Principles of Microeconomics,IFQD,"Introduces economic decision making, markets, supply and demand, consumer behavior, firms, and basic welfare analysis.",None.
+202610,10422,ECON,102,Principles of Macroeconomics,IFQD,"Covers national income, inflation, unemployment, fiscal policy, monetary policy, and international trade.",None.
+202610,11834,CMSC,150,Introduction to Computing,IFQD,"Introduces computational thinking, programming fundamentals, data structures, and problem solving using code.",None.
+202610,11835,MATH,211,Calculus I,IFQD,"Studies limits, derivatives, integrals, and applications of single-variable calculus.",Placement or departmental permission.
+202610,12309,PSYC,100,Introduction to Psychology,AISO,"Surveys major topics in psychology including cognition, development, behavior, social psychology, and mental health.",None.
+202610,13014,BIOL,190,Introduction to Biological Thinking,AINS,"Introduces biological systems, evolution, genetics, ecology, and experimental reasoning.",None.
+202610,14108,ENGL,202,Academic Writing Seminar,AILT,"Develops college-level writing, close reading, argumentation, and research skills.",None.
+202610,15277,LDST,101,Leadership and the Humanities,AIHS,"Explores leadership through historical, philosophical, and cultural texts.",None.
+202610,16602,GEOG,210,"People, Places, and Environments",AISO,"Examines relationships among people, place, environment, and spatial patterns using geographic methods.",None.
+202610,17891,HIST,199,Global History in Perspective,AIHS,"Introduces historical analysis through global themes, evidence, and interpretation.",None.
+202610,18340,PHIL,110,Introduction to Ethics,AIHS,Explores major ethical theories and applies them to contemporary moral questions.,None.
+202610,19563,ARTS,101,Foundations of Visual Art,AIVP,"Introduces visual composition, creative process, and art-making practices.",None.
+202610,20674,DATA,101,Introduction to Data Analytics,IFQD,"Introduces data collection, cleaning, visualization, and interpretation for real-world questions.",None.
+202610,21785,CHEM,141,General Chemistry I,AINS,"Covers atomic structure, bonding, stoichiometry, thermodynamics, and chemical reactions.",Placement or concurrent enrollment in introductory laboratory.
+202610,22896,RELG,130,Religion and Culture,AIHS,"Examines religious traditions, practices, texts, and their influence on culture and society.",None.
+202610,20674,DATA,101,Introduction to Data Analytics,SLP,"Introduces data collection, cleaning, visualization, and interpretation for real-world questions.",None.
+202610,16602,GEOG,210,"People, Places, and Environments",IFPE,"Examines relationships among people, place, environment, and spatial patterns using geographic methods.",None.

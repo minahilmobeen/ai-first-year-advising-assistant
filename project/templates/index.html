@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>First-Year Advising Assistant · University of Richmond</title>
+  <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+
+  <nav class="topnav" id="topnav">
+    <div class="topnav-brand">
+      <img src="https://d1gtq9mqg5x3oe.cloudfront.net/hermes/svgs/brand/elements/identity/primary-logo/shield_ur.svg"
+           alt="University of Richmond" class="shield-logo" width="28" height="34">
+      <span>First-Year Advising Assistant</span>
+    </div>
+    <div class="topnav-tabs">
+      <button class="topnav-tab" onclick="navTo('acc-profile')">Student Profile</button>
+      <button class="topnav-tab" onclick="navTo('acc-majors')">Major Recommendations</button>
+      <button class="topnav-tab" onclick="navTo('acc-fys')">FYS Recommendations</button>
+      <button class="topnav-tab" onclick="navTo('acc-gened')">Gen-Ed Recommendations</button>
+      <button class="topnav-tab" onclick="navTo('acc-fy-courses')">All Courses</button>
+    </div>
+  </nav>
+
+  <div id="page-profile" class="page active">
+
+    <!-- ── Empty state ── -->
+    <div class="profile-empty-state" id="profile-empty-state">
+      <p id="empty-state-msg">No student ID provided. Please open this page with a valid <code>?id=</code> query parameter.</p>
+    </div>
+
+    <!-- ── Two-column layout ── -->
+    <div class="profile-layout" id="profile-layout" style="display:none">
+
+      <!-- LEFT: accordion panels -->
+      <div id="profile-left">
+
+        <!-- 0. Student Profile accordion -->
+        <div class="accordion open" id="acc-profile">
+          <div class="accordion-header" onclick="toggleAccordion('acc-profile')">
+            <div class="acc-title">Student Profile</div>
+            <span class="acc-chevron" aria-hidden="true">⌄</span>
+          </div>
+          <div class="accordion-body">
+            <div id="student-profile-body"></div>
+          </div>
+        </div>
+
+        <!-- 1. FYS accordion -->
+        <div class="accordion" id="acc-fys">
+          <div class="accordion-header" onclick="toggleAccordion('acc-fys')">
+            <div class="acc-title">First-Year Seminar (FYS) Suggestions</div>
+            <span class="acc-chevron" aria-hidden="true">⌄</span>
+          </div>
+          <div class="accordion-body">
+            <div class="suggestion-list" id="fys-list"></div>
+          </div>
+        </div>
+
+        <!-- 2. Major Suggestions accordion -->
+        <div class="accordion" id="acc-majors">
+          <div class="accordion-header" onclick="toggleAccordion('acc-majors')">
+            <div class="acc-title">Major / Program Suggestions</div>
+            <span class="acc-chevron" aria-hidden="true">⌄</span>
+          </div>
+          <div class="accordion-body">
+            <div class="suggestion-list" id="major-list"></div>
+          </div>
+        </div>
+
+        <!-- 3. Gen-Ed accordion -->
+        <div class="accordion" id="acc-gened">
+          <div class="accordion-header" onclick="toggleGenedAccordion()">
+            <div class="acc-title">Gen-Ed Recommendations</div>
+            <span class="acc-chevron" aria-hidden="true">⌄</span>
+          </div>
+          <div class="accordion-body">
+            <div class="gened-tab-bar">
+              <button class="gened-tab-btn active" id="tab-btn-courses"
+                      onclick="switchGenedTab('courses')">Recommended Courses</button>
+              <button class="gened-tab-btn" id="tab-btn-areas"
+                      onclick="switchGenedTab('areas')">Gen-Ed Areas</button>
+            </div>
+            <div id="gened-courses-panel" class="gened-tab-panel"></div>
+            <div id="gened-areas-panel" class="gened-tab-panel" style="display:none"></div>
+          </div>
+        </div>
+
+        <!-- 4. First-Year Available Courses accordion -->
+        <div class="accordion" id="acc-fy-courses">
+          <div class="accordion-header" onclick="toggleAccordion('acc-fy-courses')">
+            <div class="acc-title">First-Year Available Courses</div>
+            <span class="acc-chevron" aria-hidden="true">⌄</span>
+          </div>
+          <div class="accordion-body">
+            <div id="fy-courses-body"></div>
+          </div>
+        </div>
+
+      </div><!-- /profile-left -->
+
+      <!-- RIGHT: detail panel + selected items + gened filter -->
+      <div id="profile-right">
+
+        <div class="detail-panel" id="detail-panel">
+          <div class="detail-placeholder">
+            <p>Select a suggestion on the left to see details here.</p>
+          </div>
+        </div>
+
+        <!-- Selected items box -->
+        <div class="selected-items-panel" id="selected-items-panel">
+          <div class="selected-items-header">
+            <h3>Selected for Student</h3>
+            <button class="btn-copy-selected" onclick="copySelectedItems()" title="Copy as email template">Copy as Email</button>
+          </div>
+          <div class="selected-items-body" id="selected-items-body">
+            <div class="selected-items-empty">No items selected. Use checkboxes in the detail panel.</div>
+          </div>
+        </div>
+
+        <!-- Gen-Ed filter card -->
+        <div class="gened-filter-right-card" id="gened-filter-popup" style="display:none">
+          <div class="gened-filter-right-label">Filter Gen-Ed Areas</div>
+          <div class="gened-filter-body" id="gened-filter-body"></div>
+        </div>
+
+      </div><!-- /profile-right -->
+    </div><!-- /profile-layout -->
+  </div><!-- /page-profile -->
+
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  {% if student %}
+  <script>
+    // @ts-nocheck
+    window.__STUDENT__ = {{ student | tojson }};
+  </script>
+  {% endif %}
+  <script>
+    // @ts-nocheck
+    window.__OPTIONS__ = {{ options | tojson }};
+  </script>
+  <script src="/static/apps.js"></script>
+
+</body>
+</html>
