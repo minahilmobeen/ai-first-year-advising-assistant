@@ -63,7 +63,7 @@ Provides a simple web interface that allows advisors to:
 To reduce exposure of student information:
 
 * Student profiles are not searchable through the public interface
-* Students can access recommendations through unique identifiers or recommendation generation workflows
+* Advisors can access recommendations through unique identifiers or recommendation generation workflows
 * Recommendations are not permanently stored through the web interface
 * The public repository contains only demonstration and public data
 
@@ -200,7 +200,6 @@ Any student-related data included in this repository is synthetic and exists sol
 Potential future enhancements include:
 
 * Advisor authentication and role-based access controls
-* Improved recommendation explainability
 * Recommendation feedback loops
 * Expanded academic planning support
 * Integration with institutional advising systems
